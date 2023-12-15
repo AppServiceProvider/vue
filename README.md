@@ -27,3 +27,5 @@ npm run dev
 ```sh
 npm run build
 ```
+
+[tiya html template setup vuejs no plugin](https://templatemo.com/live/templatemo_587_tiya_golf_club}

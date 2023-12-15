@@ -23,7 +23,11 @@
             <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
               <div class="custom-block-image-wrap">
                 <a href="event-detail.html">
-                 <img alt="Vue logo" class="logo img-fluid" src="../assets/images/professional-golf-player.jpg" />
+                  <img
+                    alt="Vue logo"
+                    class="logo img-fluid"
+                    src="../assets/images/professional-golf-player.jpg"
+                  />
                   <i class="custom-block-icon bi-link"></i>
                 </a>
               </div>
@@ -81,7 +85,11 @@
             <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
               <div class="custom-block-image-wrap">
                 <a href="event-detail.html">
-                  <img src="../assets/images/girl-taking-selfie-with-friends-golf-field.jpg" class="custom-block-image img-fluid" alt="" />
+                  <img
+                    src="../assets/images/girl-taking-selfie-with-friends-golf-field.jpg"
+                    class="custom-block-image img-fluid"
+                    alt=""
+                  />
 
                   <i class="custom-block-icon bi-link"></i>
                 </a>
