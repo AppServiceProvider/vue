@@ -28,4 +28,4 @@ npm run dev
 npm run build
 ```
 
-[tiya html template setup vuejs no plugin](https://templatemo.com/live/templatemo_587_tiya_golf_club}
+[Tiya html template setup vue.js no plugins used](https://templatemo.com/live/templatemo_587_tiya_golf_club)
