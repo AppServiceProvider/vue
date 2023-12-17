@@ -1,11 +1,26 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-
-</script>
-
 <template>
-    <HelloWorld msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, vero?"/>
+    <HelloWorld name="roman" heroName="superMan"/>
+    <HelloWorld name="hossain" heroName="batMan"/>
+    <HelloWorld :name="name" :heroName="channel"/>
+
+    <Artical title="Artical title" :likes="500" description="lorem imsum" />
+
 </template>
 
-<style scoped>
-</style>
+<script>
+import HelloWorld from './components/HelloWorld.vue';
+import Artical from './components/Artical.vue';
+
+export default{
+  components:{
+    HelloWorld,
+    Artical
+  },
+data() {
+  return {
+    name:"github",
+    channel: "opensource"
+  }
+},
+}
+</script>

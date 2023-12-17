@@ -1,17 +1,25 @@
-<script setup>
+<!-- <script setup>
 defineProps({
   msg: {
     type: String,
-    required: true
-  }
-})
+    required: true,
+  },
+});
+</script> -->
+
+<script>
+export default{
+  props:[
+    'name',
+    'heroName',
+  ]
+}
 </script>
 
 <template>
   <div>
-    <h1>{{ msg }}</h1>
+    <h2>{{ name }} {{ heroName }}</h2>
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
