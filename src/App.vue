@@ -1,6 +1,5 @@
 <template>
-  <ChildComponent :parentClass="propsInClass.pink" />
-  <ChildComponent :parentClass="propsInClass.blue" />
+  <ChildComponent :childJimmy="jimmy"></ChildComponent>
 </template>
 
 <script>
@@ -9,9 +8,12 @@ import ChildComponent from "./components/ChildComponent.vue";
 export default {
   data() {
     return {
-      propsInClass: {
-        pink: "pink",
-        blue: "blue",
+      jimmy: {
+        name: "Jimmy",
+        id: 55688,
+        gender: "male",
+        age: 26,
+        like: ["surfing", "diving", "climbing"],
       },
     };
   },
@@ -21,10 +23,4 @@ export default {
 };
 </script>
 <style>
-.pink {
-    background-color: DeepPink;
-}
-.blue {
-    background-color: DeepSkyBlue;
-}
 </style>

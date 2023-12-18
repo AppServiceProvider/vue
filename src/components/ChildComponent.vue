@@ -1,9 +1,13 @@
 <template>
- <div :class="parentClass" class="other-class"><h1>Lorem ipsum dolor sit amet.</h1></div>
+  <p>{{ childJimmy.name }}</p>
+  <p>{{ childJimmy.id }}</p>
+  <p>{{ childJimmy.gender }}</p>
+  <p>{{ childJimmy.age }}</p>
+  <p>{{ childJimmy.like }}</p>
 </template>
 
 <script>
 export default {
-  props: ["parentClass"],
-}
+  props: ["childJimmy"],
+};
 </script>
