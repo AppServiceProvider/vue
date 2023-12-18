@@ -1,18 +1,18 @@
-<script >
-import ComponentA from "./components/ComponentA.vue";
-
-export default {
-  components: {
-    ComponentA,
-  },
-  provide:{
-    userName: "roman hossain shaon"
-  }
-};
-</script>
-
 <template>
-  <h1>App vue</h1>
-  <ComponentA name="dataPass App.vue"/>
+  <ChildComponent :childProp='parentData'></ChildComponent>
 </template>
 
+<script>
+import ChildComponent from './components/ChildComponent.vue';
+
+export default {
+  data(){
+      return {
+          parentData:'App.vue component'
+          }
+  },
+  components:{
+      ChildComponent
+  }
+}
+</script>
