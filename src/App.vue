@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <p>This is the parent component.</p>
-    <ChildComponent>
-      <p>This is injected content from the parent component.</p>
-      <p>It can still bind to data in the parent's scope: {{myVariable}}</p>
-    </ChildComponent>
-  </div>
+  <ChildComponent>
+    <template v-slot:header>
+      <h1>Lorem ipsum .</h1>
+    </template>
+    <template v-slot:footer>
+      <span>dolor sit amet</span>
+    </template>
+    <p>aaaaaa</p>
+  </ChildComponent>
 </template>
 <script>
 import ChildComponent from "./components/ChildComponent.vue";
@@ -16,7 +18,7 @@ export default {
   },
   data() {
     return {
-      myVariable: `Parent Variable`
+      myVariable: `Parent Variable`,
     };
   },
 };

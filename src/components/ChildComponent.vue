@@ -1,7 +1,7 @@
 <template>
-  <div style="background-color: brown;">
-    <p>This is the child component.</p>
-    <slot></slot>
+  <div id="card-content">
+          <slot name="header"></slot>
+          <slot name="footer"></slot>
   </div>
 </template>
 <script>
