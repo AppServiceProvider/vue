@@ -27,3 +27,8 @@ npm run dev
 ```sh
 npm run build
 ```
+
+<p align="center"><a href="public/props-diagram.png" target="_blank"><img src="public/props-diagram.png" width="400" alt="props-diagram"></a></p>
+<p align="center"><a href="public/props-diagram1.png" target="_blank"><img src="public/props-diagram1.png" width="400" alt="props-diagram"></a></p>
+<p align="center"><a href="public/component-provide-inject.png" target="_blank"><img src="public/component-provide-inject.png" width="400" alt="provide-inject"></a></p>
+<p align="center"><a href="public/provide-inject-use (1).png" target="_blank"><img src="public/provide-inject-use (1).png" width="400" alt="provide-inject"></a></p>

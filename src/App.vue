@@ -1,25 +1,18 @@
-<template>
-  <HelloWorld name="roman" heroName="superMan" />
-  <HelloWorld name="hossain" heroName="batMan" />
-  <HelloWorld :name="name" :heroName="channel" />
-
-  <Artical id="my-artical" title="Artical title" :likes="500" description="lorem imsum" />
-</template>
-
-<script>
-import HelloWorld from "./components/HelloWorld.vue";
-import Artical from "./components/Artical.vue";
+<script >
+import ComponentA from "./components/ComponentA.vue";
 
 export default {
   components: {
-    HelloWorld,
-    Artical,
+    ComponentA,
   },
-  data() {
-    return {
-      name: "github",
-      channel: "opensource",
-    };
-  },
+  provide:{
+    userName: "roman hossain shaon"
+  }
 };
 </script>
+
+<template>
+  <h1>App vue</h1>
+  <ComponentA name="dataPass App.vue"/>
+</template>
+
