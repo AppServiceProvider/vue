@@ -1,13 +1,16 @@
-<template>
-  <p>{{ name }}</p>
-  <p>{{ id }}</p>
-  <p>{{ gender }}</p>
-  <p>{{ age }}</p>
-  <p>{{ like }}</p>
+<template lang="html">
+  <button type="button" @click="passEvent">Update me</button>
 </template>
 
 <script>
 export default {
-  props: ["name", "id", "gender", "age", "like"]
+  name: "ChildComponent",
+  methods: {
+    passEvent() {
+      this.$emit("changeTitle", "Awesome ");
+    },
+  },
 };
 </script>
+
+<style lang="css" scoped></style>

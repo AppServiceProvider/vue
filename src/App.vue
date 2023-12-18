@@ -1,31 +1,23 @@
 <template>
-  <ChildComponent
-    :name="jimmy.name"
-    :id="jimmy.id"
-    :gender="jimmy.gender"
-    :age="bindOther"
-    :like="bindOther"
-  ></ChildComponent>
+  <h1>{{ title }}</h1>
+  <ChildComponent @changeTitle="ChangeT($event)" />
 </template>
-
 <script>
 import ChildComponent from "./components/ChildComponent.vue";
-
 export default {
-  data() {
-    return {
-      jimmy: {
-        name: "Jimmy",
-        id: 55688,
-        gender: "male",
-        age: 26,
-        like: ["surfing", "diving", "climbing"],
-      },
-      bindOther: "bindOther",
-    };
-  },
+  name: "App",
   components: {
     ChildComponent,
+  },
+  data() {
+    return {
+      title: "Rick Grimes",
+    };
+  },
+  methods: {
+    ChangeT(title) {
+      this.title = title;
+    },
   },
 };
 </script>
