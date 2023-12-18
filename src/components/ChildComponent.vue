@@ -1,13 +1,13 @@
 <template>
-  <p>{{ childJimmy.name }}</p>
-  <p>{{ childJimmy.id }}</p>
-  <p>{{ childJimmy.gender }}</p>
-  <p>{{ childJimmy.age }}</p>
-  <p>{{ childJimmy.like }}</p>
+  <p>{{ name }}</p>
+  <p>{{ id }}</p>
+  <p>{{ gender }}</p>
+  <p>{{ age }}</p>
+  <p>{{ like }}</p>
 </template>
 
 <script>
 export default {
-  props: ["childJimmy"],
+  props: ["name", "id", "gender", "age", "like"]
 };
 </script>

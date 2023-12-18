@@ -1,5 +1,11 @@
 <template>
-  <ChildComponent :childJimmy="jimmy"></ChildComponent>
+  <ChildComponent
+    :name="jimmy.name"
+    :id="jimmy.id"
+    :gender="jimmy.gender"
+    :age="bindOther"
+    :like="bindOther"
+  ></ChildComponent>
 </template>
 
 <script>
@@ -15,6 +21,7 @@ export default {
         age: 26,
         like: ["surfing", "diving", "climbing"],
       },
+      bindOther: "bindOther",
     };
   },
   components: {
@@ -22,5 +29,4 @@ export default {
   },
 };
 </script>
-<style>
-</style>
+<style></style>
