@@ -1,5 +1,6 @@
 <template>
-  <ChildComponent :childProp='parentData'></ChildComponent>
+  <div>app.vue div element {{parentData}}</div>
+<ChildComponent childProp='parentData'></ChildComponent>
 </template>
 
 <script>
