@@ -1,6 +1,11 @@
 <template>
-  <h1>{{ title }}</h1>
-  <ChildComponent @changeTitle="ChangeT($event)" />
+  <div>
+    <p>This is the parent component.</p>
+    <ChildComponent>
+      <p>This is injected content from the parent component.</p>
+      <p>It can still bind to data in the parent's scope: {{myVariable}}</p>
+    </ChildComponent>
+  </div>
 </template>
 <script>
 import ChildComponent from "./components/ChildComponent.vue";
@@ -11,13 +16,8 @@ export default {
   },
   data() {
     return {
-      title: "Rick Grimes",
+      myVariable: `Parent Variable`
     };
-  },
-  methods: {
-    ChangeT(title) {
-      this.title = title;
-    },
   },
 };
 </script>

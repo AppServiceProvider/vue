@@ -1,16 +1,11 @@
-<template lang="html">
-  <button type="button" @click="passEvent">Update me</button>
+<template>
+  <div style="background-color: brown;">
+    <p>This is the child component.</p>
+    <slot></slot>
+  </div>
 </template>
-
 <script>
 export default {
   name: "ChildComponent",
-  methods: {
-    passEvent() {
-      this.$emit("changeTitle", "Awesome ");
-    },
-  },
 };
 </script>
-
-<style lang="css" scoped></style>
