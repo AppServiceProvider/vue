@@ -1,19 +1,30 @@
 <template>
-  <div>app.vue div element {{parentData}}</div>
-<ChildComponent childProp='parentData'></ChildComponent>
+  <ChildComponent :parentClass="propsInClass.pink" />
+  <ChildComponent :parentClass="propsInClass.blue" />
 </template>
 
 <script>
-import ChildComponent from './components/ChildComponent.vue';
+import ChildComponent from "./components/ChildComponent.vue";
 
 export default {
-  data(){
-      return {
-          parentData:'App.vue component'
-          }
+  data() {
+    return {
+      propsInClass: {
+        pink: "pink",
+        blue: "blue",
+      },
+    };
   },
-  components:{
-      ChildComponent
-  }
-}
+  components: {
+    ChildComponent,
+  },
+};
 </script>
+<style>
+.pink {
+    background-color: DeepPink;
+}
+.blue {
+    background-color: DeepSkyBlue;
+}
+</style>

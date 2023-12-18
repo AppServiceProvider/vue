@@ -1,9 +1,9 @@
 <template>
-  <div>{{childProp}}</div>
+ <div :class="parentClass" class="other-class"><h1>Lorem ipsum dolor sit amet.</h1></div>
 </template>
 
 <script>
 export default {
-  props: ['childProp']
+  props: ["parentClass"],
 }
 </script>
