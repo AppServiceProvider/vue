@@ -3,12 +3,13 @@
   <button @click="activeTab = 'ChildTwo'">tab B</button>
   <button @click="activeTab = 'ChildThree'">tab C</button>
 
-  <component :is="activeTab" />
+  <keep-alive>
+    <component :is="activeTab" />
+  </keep-alive>
 
-
-  <!-- <ChildOne v-if="activeTab === 'ChildOne'" />
+  <ChildOne v-if="activeTab === 'ChildOne'" />
   <ChildTwo v-if="activeTab === 'ChildTwo'" />
-  <ChildThree v-if="activeTab === 'ChildThree'" /> -->
+  <ChildThree v-if="activeTab === 'ChildThree'" />
 
 </template>
 
