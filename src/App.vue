@@ -1,20 +1,16 @@
 <template>
 
-<teleport to='#portal-root'>
-
-  <Portal />
+  <PostList />
   
-</teleport>
-
 </template>
 
 <script>
-import Portal from "./components/Portal.vue";
+import PostList from "./components/PostList.vue";
 
 export default {
   name: "App",
   components: {
-    Portal,
+    PostList,
   },
 };
 </script>
